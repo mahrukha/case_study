@@ -5,7 +5,7 @@ module "vpc-sub-fw" {
   subnet_name = var.subnet_name
   ip_cidr_range = var.ip_cidr_range
   region = var.region
-  fw_name = var.fw_nam
+  fw_name = var.fw_name
   protocol1 = var.protocol1
   protocol2 = var.protocol2
   ports = var.ports
