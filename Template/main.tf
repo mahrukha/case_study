@@ -1,5 +1,5 @@
 module "vpc-sub-fw" {
-  source = "git::git@github.com:mahrukha/ojt//Module"
+  source = "git::https://github.com/mahrukha/ojt//Module"
   vpc_name = "my-vpc" 
   auto_create_subnetworks = false
   subnet_name = "my-subnet"
