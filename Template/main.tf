@@ -1,13 +1,13 @@
 module "vpc-sub-fw" {
   source = "git::https://github.com/mahrukha/ojt//Module"
-  vpc_name = "my-vpc" 
-  auto_create_subnetworks = false
-  subnet_name = "my-subnet"
-  ip_cidr_range = "10.10.1.0/24"
-  region = "europe-north1"
-  fw_name = "my-fw"
-  protocol1 = "icmp"
-  protocol2 = "tcp"
-  ports = [ "22","80","443","3389" ]
-  source_ranges = ["10.10.1.0/24"]
+  vpc_name = var.vpc_name
+  auto_create_subnetworks = var.auto_create_subnetworks
+  subnet_name = var.subnet_name
+  ip_cidr_range = var.ip_cidr_range
+  region = var.region
+  fw_name = var.fw_nam
+  protocol1 = var.protocol1
+  protocol2 = var.protocol2
+  ports = var.ports
+  source_ranges = var.source_ranges
 }
